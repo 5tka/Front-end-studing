@@ -1,0 +1,640 @@
+/* line 1, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 4, ../sass/screen.scss */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 9, ../sass/screen.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 12, ../sass/screen.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 16, ../sass/screen.scss */
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 21, ../sass/screen.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 25, ../sass/screen.scss */
+.left {
+  float: left;
+}
+
+/* line 28, ../sass/screen.scss */
+.right {
+  float: right;
+}
+
+/* line 32, ../sass/screen.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 36, ../sass/screen.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 40, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 47, ../sass/screen.scss */
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+/* line 52, ../sass/screen.scss */
+.header {
+  background: url(../img/header-bg.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* line 59, ../sass/screen.scss */
+.top-line {
+  background: #465058;
+  position: absolute;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  padding: 35px 0;
+  opacity: .8;
+}
+
+/* line 69, ../sass/screen.scss */
+.nav-item {
+  display: inline-block;
+  margin-left: 35px;
+  text-transform: uppercase;
+}
+/* line 73, ../sass/screen.scss */
+.nav-item:first-child {
+  margin-left: 0;
+}
+/* line 76, ../sass/screen.scss */
+.nav-item a {
+  color: #fff;
+  font-weight: 600;
+}
+/* line 79, ../sass/screen.scss */
+.nav-item a:hover {
+  color: #4bcaff;
+}
+
+/* line 84, ../sass/screen.scss */
+.active {
+  color: #4bcaff !important;
+  border: 3px solid #4bcaff;
+  padding: 8px 12px;
+}
+
+/* line 90, ../sass/screen.scss */
+.header-title {
+  height: 100%;
+  position: relative;
+}
+
+/* line 94, ../sass/screen.scss */
+.container-title {
+  position: absolute;
+  transform: translate(-50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
+
+/* line 101, ../sass/screen.scss */
+.title-wrap {
+  text-align: center;
+}
+/* line 103, ../sass/screen.scss */
+.title-wrap h1 {
+  font-weight: normal;
+  font-size: 38px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* line 110, ../sass/screen.scss */
+.title-wrap span {
+  background: #4a555c;
+  padding: 5px;
+}
+
+/* line 115, ../sass/screen.scss */
+.first-h1 {
+  margin-bottom: 20px;
+}
+
+/* line 120, ../sass/screen.scss */
+.first span {
+  position: relative;
+}
+/* line 122, ../sass/screen.scss */
+.first span::before {
+  font-style: italic;
+  content: "\201C";
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 131, ../sass/screen.scss */
+.second span {
+  position: relative;
+}
+/* line 133, ../sass/screen.scss */
+.second span::after {
+  font-style: italic;
+  content: "\201D";
+  display: inline-block;
+}
+
+/* line 141, ../sass/screen.scss */
+.services {
+  background: #4bcaff;
+  opacity: .9;
+  min-height: 300px;
+  padding-top: 65px;
+}
+
+/* line 165, ../sass/screen.scss */
+.services-wrap {
+  position: relative;
+}
+/* line 167, ../sass/screen.scss */
+.services-wrap .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 35px;
+}
+/* line 155, ../sass/screen.scss */
+.services-wrap .title::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border-bottom: 3px solid #fff;
+  width: 58px;
+}
+
+/* line 173, ../sass/screen.scss */
+.services-items-wrap {
+  padding-bottom: 60px;
+}
+
+/* line 176, ../sass/screen.scss */
+.services-item {
+  width: 215px;
+  margin-right: 25px;
+}
+/* line 179, ../sass/screen.scss */
+.services-item:last-child {
+  margin-right: 0;
+}
+/* line 182, ../sass/screen.scss */
+.services-item img {
+  margin-bottom: 10px;
+}
+
+/* line 187, ../sass/screen.scss */
+.item-title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* line 194, ../sass/screen.scss */
+.item-dscr {
+  color: #fff;
+  font-size: 12px;
+}
+
+/* line 199, ../sass/screen.scss */
+.nav-p-item {
+  font-size: 13px;
+  display: inline-block;
+  margin-left: 35px;
+  text-transform: uppercase;
+}
+/* line 204, ../sass/screen.scss */
+.nav-p-item:first-child {
+  margin-left: 0;
+}
+/* line 207, ../sass/screen.scss */
+.nav-p-item a {
+  color: #515f67;
+  font-weight: 600;
+}
+/* line 210, ../sass/screen.scss */
+.nav-p-item a:hover {
+  color: #4bcaff;
+}
+
+/* line 216, ../sass/screen.scss */
+.portfolio {
+  padding-top: 65px;
+  background: #fff;
+}
+
+/* line 221, ../sass/screen.scss */
+.portfolio-wrap {
+  line-height: 50px;
+  position: relative;
+}
+/* line 224, ../sass/screen.scss */
+.portfolio-wrap .title {
+  color: #515f67;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  position: relative;
+}
+/* line 155, ../sass/screen.scss */
+.portfolio-wrap .title::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border-bottom: 3px solid #515f67;
+  width: 58px;
+}
+
+/* line 228, ../sass/screen.scss */
+.portfolio-nav {
+  padding-right: 40px;
+}
+
+/* line 232, ../sass/screen.scss */
+.portfolio-item-wrap {
+  padding-top: 75px;
+}
+
+/* line 236, ../sass/screen.scss */
+.portfolio-item {
+  padding-bottom: 50px;
+}
+/* line 238, ../sass/screen.scss */
+.portfolio-item img {
+  float: left;
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+/* line 243, ../sass/screen.scss */
+.portfolio-item img:nth-child(4n) {
+  margin-right: 0 !important;
+}
+
+/* line 248, ../sass/screen.scss */
+body {
+  background: url(../img/paralax_bg.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* line 254, ../sass/screen.scss */
+.video {
+  background: #515f67;
+  opacity: .8;
+  padding-top: 65px;
+  min-height: 420px;
+}
+
+/* line 261, ../sass/screen.scss */
+.video-dscr {
+  width: 480px;
+}
+/* line 263, ../sass/screen.scss */
+.video-dscr .dscr {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* line 268, ../sass/screen.scss */
+.video-dscr .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 35px;
+}
+/* line 155, ../sass/screen.scss */
+.video-dscr .title::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border-bottom: 3px solid #fff;
+  width: 58px;
+}
+
+/* line 274, ../sass/screen.scss */
+.button-dscr {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #353f46;
+  padding: 10px 40px;
+  border: 3px solid #353f46;
+  display: inline-block;
+  margin-top: 21px;
+}
+
+/* line 287, ../sass/screen.scss */
+.video-wrap video {
+  width: 400px;
+  height: auto;
+}
+
+/* line 293, ../sass/screen.scss */
+.twitter {
+  background: #4bcaff;
+  min-height: 260px;
+  padding-top: 65px;
+}
+
+/* line 300, ../sass/screen.scss */
+.twitter-dscr .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 35px;
+}
+/* line 155, ../sass/screen.scss */
+.twitter-dscr .title::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border-bottom: 3px solid #fff;
+  width: 58px;
+}
+/* line 304, ../sass/screen.scss */
+.twitter-dscr img {
+  margin-top: 15px;
+}
+/* line 307, ../sass/screen.scss */
+.twitter-dscr .dscr {
+  margin: 0;
+  color: #fff;
+  font-size: 22px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+}
+/* line 313, ../sass/screen.scss */
+.twitter-dscr .dscr .spec {
+  font-weight: 700;
+}
+
+/* line 319, ../sass/screen.scss */
+.about {
+  padding-top: 75px;
+  background: #252f37;
+  opacity: .8;
+  min-height: 380px;
+}
+
+/* line 328, ../sass/screen.scss */
+.about-wrap .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 21px;
+}
+/* line 155, ../sass/screen.scss */
+.about-wrap .title::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border-bottom: 3px solid #fff;
+  width: 58px;
+}
+
+/* line 334, ../sass/screen.scss */
+.about-left {
+  width: 45%;
+}
+/* line 336, ../sass/screen.scss */
+.about-left .dscr {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* line 342, ../sass/screen.scss */
+.about-right {
+  width: 45%;
+}
+/* line 344, ../sass/screen.scss */
+.about-right .dscr {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+/* line 353, ../sass/screen.scss */
+.social-list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 356, ../sass/screen.scss */
+.social-list li a {
+  display: block;
+}
+/* line 359, ../sass/screen.scss */
+.social-list li:last-child {
+  margin-right: 0;
+}
+
+/* line 365, ../sass/screen.scss */
+.wh, .tw, .gplus, .dribble, .coffee {
+  width: 64px;
+  height: 64px;
+}
+
+/* line 369, ../sass/screen.scss */
+.tw {
+  background: url(../img/icons/icon-twitter.png) no-repeat;
+}
+
+/* line 373, ../sass/screen.scss */
+.gplus {
+  background: url(../img/icons/gplus-icon.png) no-repeat;
+}
+
+/* line 377, ../sass/screen.scss */
+.dribble {
+  background: url(../img/icons/icon-dribbble.png) no-repeat;
+}
+
+/* line 381, ../sass/screen.scss */
+.coffee {
+  background: url(../img/icons/icon-coffee.png) no-repeat;
+}
+
+/* line 386, ../sass/screen.scss */
+.contact {
+  padding-top: 75px;
+  min-height: 500px;
+}
+
+/* line 393, ../sass/screen.scss */
+.contact-wrap .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 155, ../sass/screen.scss */
+.contact-wrap .title::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border-bottom: 3px solid #fff;
+  width: 58px;
+}
+
+/* line 398, ../sass/screen.scss */
+.contact-left {
+  width: 35%;
+}
+
+/* line 401, ../sass/screen.scss */
+.contact-right {
+  width: 55%;
+}
+/* line 403, ../sass/screen.scss */
+.contact-right .dscr {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* line 407, ../sass/screen.scss */
+.contact-right .dscr:last-child {
+  width: 40%;
+}
+
+/* line 413, ../sass/screen.scss */
+.label-style, .contact-left label, .contact-bottom label {
+  width: 100%;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* line 423, ../sass/screen.scss */
+.input-style, .contact-left input, .contact-bottom textarea {
+  width: 100%;
+  background: none;
+  border: 2px solid #fff;
+  padding: 5px;
+}
+
+/* line 433, ../sass/screen.scss */
+.contact-left input {
+  height: 45px;
+}
+
+/* line 439, ../sass/screen.scss */
+.contact-bottom {
+  width: 100%;
+}
+/* line 444, ../sass/screen.scss */
+.contact-bottom textarea {
+  resize: none;
+  height: 180px;
+}
+
+/* line 452, ../sass/screen.scss */
+.footer {
+  background: #353f47;
+}
+/* line 454, ../sass/screen.scss */
+.footer .container {
+  height: 160px;
+  position: relative;
+}
+
+/* line 460, ../sass/screen.scss */
+.footer-list {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 464, ../sass/screen.scss */
+.footer-list li {
+  display: inline-block;
+  margin: 0 14px;
+}
+/* line 467, ../sass/screen.scss */
+.footer-list li:last-child a::after {
+  content: '';
+  display: none;
+}
+/* line 472, ../sass/screen.scss */
+.footer-list a {
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #515f67;
+  text-transform: uppercase;
+  position: relative;
+}
+/* line 478, ../sass/screen.scss */
+.footer-list a::after {
+  content: '';
+  position: absolute;
+  border-right: 2px solid #515f67;
+  right: -14px;
+  top: 0;
+  bottom: 0;
+}
