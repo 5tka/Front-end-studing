@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title МЕГАПРОГРЕСС
+    
+    link(rel="stylesheet", href="stylesheets/normalize.css")
+    link(rel="stylesheet", href="stylesheets/screen.css")
+    link(rel="stylesheet", href="stylesheets/jquery.kenburnsy.css")
+    link(rel="stylesheet", href="stylesheets/lightbox.css")
+    link(rel="stylesheet", href="js/slick/slick-theme.css")
+    link(rel="stylesheet", href="js/slick/slick.css")
+    link(rel="stylesheet", href="stylesheets/grid-system.css")
+    
+body
+    .wrapper
+        
+        header.header#home
+            #head-bg
+                img(src="img/bg1.jpg", alt="")
+                img(src="img/bg2.jpg", alt="")
+                img(src="img/bg3.jpg", alt="")
+            .top-line.clearfix
+                .container.clearfix
+                    .logo.left
+                        a(href="#home")
+                            | МЕГАПРОГРЕСС
+                        .lang.right  
+                            a(href="index_ua.html")
+                                img(src="img/icons/ua_2.png", alt="")
+                            a(href="index.html")
+                                img(src="img/icons/ru_2.png", alt="")
+                    .adaptive-menu-init
+                    ul.nav.right
+                        li
+                            a(href="#home") Главная
+                        li
+                            a(href="#about") О компании 
+                        li
+                            a(href="#services") Наши обьекты
+                        li
+                            a(href="#contacts") Контакты
+                
+                
+            .container.clearfix
+                .info-wrap.right
+                    .info-company
+                        span 
+                            a(href="https://yandex.ua/maps/-/CVH-M6zJ")
+                                |г. Хмельницький, Просп. Миру 59, к.313 <br>
+                        span 
+                            a(href="mailto:megaprogres@ukr.net")
+                                |e-mail: megaprogres@ukr.net <br>
+                        span 
+                            a(href="tel: +380382785566")
+                                | (0382) 78-55-66 <br>
+                        
+                        
+            
+            .center-line.clearfix
+                .container.clearfix
+                    .h1-button.clearfix
+                        h1  
+                            span Частное Предприятие
+                        h1 
+                            span «МЕГАПРОГРЕСС» 
+                        a.button(href="#about") Подробнее
+                 
+        
+        
+        section.about#about
+            .container.clearfix
+                h2.title О компании 
+                .about-company
+                    p.dscr 
+                        | ЧАСТНОЕ
+                        | ПРЕДПРИЯТИЕ
+                        | «МЕГАПРОГРЕСС     
+                    p.info
+                        | Частное предприятие «Мегапрогресс» более десяти лет на строительном рынке Украины. 
+                        | За весь период строительной деятельности, предприятие реализовало около 80 строительных 
+                        | проектов как частной формы собственности так и бюджетной, различных уровней сложности, 
+                        | капитальные ремонты, новое строительство и реставрация памятников архитектуры.
+                    p.info
+                        | Большой аспект в строительстве предприятие уделяет возведению металлических и
+                        | железобетонных конструкций, отделочным работам, инженерным сетям и сооружениям, 
+                        | строительству автомобильных дорог. Одними из таких объектов - строительство «ХЕКРО ПЭТ» 
+                        | Хмельницкий, производственные и офисные помещения ООО «Арсенал Центр» в Хмельницком, 
+                        | производственные цеха площадью 4000 кв.м ООО «ОДВ Электрик» г. Новый Раздел Львовской обл., 
+                        | Торгового комплекса «Европа» по ул. Геологов в Хмельницком. Предприятием были проведены работы 
+                        | по ремонту и отделке сервисных центров «Киевстар» в таких городах Украины как: Житомир, Чернигов,
+                        | Винница, Киев, отделение банка Универсальный в Хмельницкий и Каменец-Подольский. Выполняли работы 
+                        | по устройству асфальтовых дорог смт.Ярмолинци Хмельницкой области, 
+                        | а также строительство теплотрасс, и монтаж котельных в пгт.Летичив, пгт.Деражня.
+                    p.info
+                        | Компания «Мегапрогресс» занимается строительством многоэтажек в таких городах Украины как
+                        | Винница, Львов, Хмельницкий. В 2012 году выполнили работы по строительству трех секций
+                        | знаменитого жилого комплекса «Набережный квартал» в Хмельницком.
+                    p.info
+                        | По поводу реставрационных работ, то предприятие имеет 
+                        | соответствующие лицензии и за время своего существования
+                        | на рынке нами было проведено реставрации таких памятников
+                        | архитектуры как : 
+                        
+                .about-item-wrap.clearfix
+                    .about-item  
+                        a(href="img/b_1.jpg" data-lightbox="image-1" data-title="Имение в пгт. Антонины ")
+                            img(src="img/b_1.jpg", alt="")
+                            span Имение в пгт. Антонины
+                    .about-item   
+                        a(href="img/b_2.jpg" data-lightbox="image-1" data-title="Покровская церковь в с.Суткивциn")
+                            img(src="img/b_2.jpg", alt="")
+                            span Покровская церковь в с.Суткивци
+                    .about-item   
+                        a(href="img/b_3.jpg" data-lightbox="image-1" data-title="Польские ворота, и Южная башня крепости в г. Каменец-Подольском")
+                            img(src="img/b_3.jpg", alt="")
+                            span Польские ворота, и Южная башня крепости в г. Каменец-Подольском
+                    .about-item
+                        a(href="img/b_4.jpg" data-lightbox="image-1" data-title="Летичевский монастыр")
+                            img(src="img/b_4.jpg", alt="")
+                            span Летичевский монастыр
+                    .about-item
+                        a(href="img/b_5.jpg" data-lightbox="image-1" data-title="Свято-Преображенский монастырь")
+                            img(src="img/b_5.jpg", alt="")
+                            span Свято-Преображенский монастырь
+                    .about-item
+                        a(href="img/b_6.jpg" data-lightbox="image-1" data-title="Дворец с.Самчики Хмельницкой обл")
+                            img(src="img/b_6.jpg", alt="")
+                            span Дворец с.Самчики Хмельницкой обл
+        section.services#services
+            .container
+                h2.title Наши обьекты
+                .gallery
+                    .slider-for
+                        a(href="img/img_sl/20150327153836.jpg" data-lightbox="image-1")
+                            img(src="img/img_sl/20150327153836.jpg", alt="")
+                            
+                        a(href="img/img_sl/22.jpg" data-lightbox="image-1")
+                            img(src="img/img_sl/22.jpg", alt="")
+                            
+                        a(href="img/img_sl/ContentImageHandler.jpg" data-lightbox="image-1")
+                            img(src="img/img_sl/ContentImageHandler.jpg", alt="")
+                            
+                        a(href="img/img_sl/DSC01109.JPG" data-lightbox="image-1")
+                            img(src="img/img_sl/DSC01109.JPG", alt="")
+                            
+                        a(href="img/img_sl/der_dom.jpg" data-lightbox="image-1")
+                            img(src="img/img_sl/der_dom.jpg", alt="")
+                            
+                        a(href="img/img_sl/002.jpg" data-lightbox="image-1")
+                            img(src="img/img_sl/002.jpg", alt="")
+                        
+                        a(href="img/img_sl/4.jpg" data-lightbox="image-1")
+                            img(src="img/img_sl/4.jpg", alt="")
+                            
+                        a(href="img/img_sl/0243.jpg" data-lightbox="image-1")
+                            img(src="img/img_sl/0243.jpg", alt="")
+                            
+                        a(href="img/img_sl/2013.11.3018h33m39s_154b64175992a6ffa5ea159b104d313b.jpg" data-lightbox="image-1")
+                            img(src="img/img_sl/2013.11.3018h33m39s_154b64175992a6ffa5ea159b104d313b.jpg", alt="")
+                    .slider-nav
+                        img(src="img/img_sl/20150327153836.jpg", alt="")
+                        img(src="img/img_sl/22.jpg", alt="")
+                        img(src="img/img_sl/ContentImageHandler.jpg", alt="")
+                        img(src="img/img_sl/DSC01109.JPG", alt="")
+                        img(src="img/img_sl/der_dom.jpg", alt="")
+                        img(src="img/img_sl/002.jpg", alt="")
+                        img(src="img/img_sl/4.jpg", alt="")
+                        img(src="img/img_sl/0243.jpg", alt="")
+                        img(src="img/img_sl/2013.11.3018h33m39s_154b64175992a6ffa5ea159b104d313b.jpg", alt="")             
+        section.contact-us#contacts
+            .container
+                h2.title контакты
+                .contacts-wrap
+                    .contacts-info
+                        span 
+                            a(href="https://yandex.ua/maps/-/CVH-M6zJ")
+                                |г. Хмельницький, Просп. Миру 59, к.313 <br>
+                        span 
+                            a(href="mailto:megaprogres@ukr.net")
+                                |e-mail: megaprogres@ukr.net <br>
+                        span 
+                            a(href="tel: (0382) 78-55-66")
+                                |Телефон: (0382) 78-55-66 <br>
+
+                    
+              
+                                       
+        footer.footer
+            .container.clearfix
+                .footer-wrap.clearfix
+                    p.dscr © Copyright 2014 
+        
+        
+        // _______________________________________________________
+        
+        
+        
+       
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+        script(type="text/javascript" src="js/jquery.kenburnsy.js")
+        script(type="text/javascript" src="js/slick/slick.js")
+        script(type="text/javascript" src="js/lightbox.js")
+        script(type="text/javascript" src="js/jquery.malihu.PageScroll2id.min.js").
+        script(type="text/javascript" src="js/main.js")
+        script(type="text/javascript" src="js/send.js")
+        script(src="http://cdn.jsdelivr.net/jquery.velocity/0.9.0/jquery.velocity.min.js")
+
+
+       
+                        
+                        
+                            
+                        
+                        
+                        
+               
