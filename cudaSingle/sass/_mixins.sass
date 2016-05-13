@@ -1,0 +1,48 @@
+=container($max-width)
+    max-width: $max-width
+    padding: 0 20px
+    width: 100%
+    margin: 0 auto
+=button($bg-c, $h-bg-c, $a-bg-c, $bb)
+    background: $bg-c
+    border-bottom: 3px solid $bb
+    font-family: 'TitilliumWeb-SemiBold'
+    font-size: 18px
+    padding: 25px 80px
+    border-radius: 3px
+    position: relative
+    float: left
+    left: 50%
+    color: #fff
+    &:hover
+        background: $h-bg-c
+    &:active
+        background: $a-bg-c
+
+=title($after-color)
+    text-transform: uppercase
+    font-family: 'TitilliumWeb-Bold'
+    font-size: 38px  
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        border-bottom: $after-color 5px solid
+        width: 85px
+        top: 100%
+        bottom: 0
+        left: 50%
+        margin: 4px 0 0 -42.5px
+%title-dscr
+    font-family: 'TitilliumWeb-Regular'
+    font-size: 18px
+    margin-bottom: 80px
+%item-title
+    font-size: 24px
+    font-family: 'TitilliumWeb-Bold'
+    text-transform: uppercase
+    font-weight: normal
+%title_dscr
+    font-family: 'TitilliumWeb-Regular'
+    font-size: 18px
+    margin-bottom: 80px

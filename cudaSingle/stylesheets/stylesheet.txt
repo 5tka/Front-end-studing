@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-fb-icon {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -10px;
+}
+
+.sprite-ln-icon {
+    width: 32px;
+    height: 32px;
+    background-position: -62px -10px;
+}
+
+.sprite-mail_icon {
+    width: 32px;
+    height: 32px;
+    background-position: -114px -10px;
+}
+
+.sprite-tw_icon {
+    width: 32px;
+    height: 32px;
+    background-position: -166px -10px;
+}

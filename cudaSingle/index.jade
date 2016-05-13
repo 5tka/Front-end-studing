@@ -1,0 +1,352 @@
+- var menuItems = ["Home","About","Team","Skills","Work", "Blog", "Contact"]
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+	link(rel="stylesheet", href="stylesheets/normalize.css")
+	link(rel="stylesheet", href="stylesheets/fonts.css")
+	link(rel="stylesheet", href="stylesheets/screen.css")
+	link(rel="stylesheet", href="stylesheets/animate.min.css")
+body
+	header.header#Home
+		a(href="#Home").arrow-up
+		.header__top-line.clearfix
+			.container
+				.header__logo.left
+					a(href="#")
+						img(src="img/logo.png", alt="Cuda")
+				.header__nav.right
+					ul.nav__list
+						each item in menuItems
+							li.nav__item
+								if item == "Home"
+									a.nav__link.nav__link_active(href="##{item}") #{item}
+								else
+									a.nav__link(href="##{item}") #{item}
+		.container
+			.header__title-wrap
+				h1.header__title.text-center
+					| Hi there! We are the 
+					| new kids on the block <br> 
+					| and we build awesome 
+					| websites and mobile apps.
+			.header__button-wrap
+				a(href="#").header__button
+					| WORK WITH US!
+	section.services#About.text-center
+		.container
+			.services__title-wrap
+				h2.services__title
+					| SERVICES WE PROVIDE
+				p.services__title-dscr
+					| We are working with both 
+					| individuals and businesses 
+					| from all over the globe <br>
+					| to create awesome websites 
+					| and applications.
+			.services__items-wrap
+				.services__item
+					img.services__item-img(src="img/icons/flag_icon.png", alt="")
+					h5.services__item-title
+						| Branding
+					p.services__item-dscr
+						| Lorem ipsum dolor sit amet, 
+						| consectetuer adipiscing elit, 
+						| sed diam nonummy nibh.
+				.services__item
+					img.services__item-img(src="img/icons/pen_icon.png", alt="")
+					h5.services__item-title
+						| Branding
+					p.services__item-dscr
+						| Lorem ipsum dolor sit amet, 
+						| consectetuer adipiscing elit, 
+						| sed diam nonummy nibh.
+				.services__item
+					img.services__item-img(src="img/icons/gears_icon.png", alt="")
+					h5.services__item-title
+						| Branding
+					p.services__item-dscr
+						| Lorem ipsum dolor sit amet, 
+						| consectetuer adipiscing elit, 
+						| sed diam nonummy nibh.
+				.services__item
+					img.services__item-img(src="img/icons/rocket_icon.png", alt="")
+					h5.services__item-title
+						| Branding
+					p.services__item-dscr
+						| Lorem ipsum dolor sit amet, 
+						| consectetuer adipiscing elit, 
+						| sed diam nonummy nibh.
+	section.team#Team.text-center
+		.container
+			.team__title-wrap
+				h2.team__title
+					| MEET OUR BEAUTIFUL TEAM
+				p.team__title-dscr
+					| We are a small team of 
+					| designers and developers, 
+					| who help brands with big ideas.
+			.team__items-wrap
+				.team__item
+					img.team__item-img(src="img/icons/circle.png", alt="")
+					h5.team__item-title
+						| ANNE HATHAWAY
+					span.team__item-sub-title
+						| CEO / Marketing Guru
+					p.team__item-dscr
+						| Lorem ipsum dolor sit amet, 
+						| consectetuer adipiscing elit, 
+						| sed diam nonummy nibh euismod 
+						| tincidunt ut laoreet
+						| dolore magna.
+					ul.team__social-list
+						li.team__social-item
+							a.team__social-link.link-fb(href="#")
+						li.team__social-item
+							a.team__social-link.link-tw(href="#")
+						li.team__social-item
+							a.team__social-link.link-ln(href="#")
+						li.team__social-item
+							a.team__social-link.link-mail(href="#")
+				.team__item
+					img.team__item-img(src="img/icons/circle.png", alt="")
+					h5.team__item-title
+						| Kate Upton
+					span.team__item-sub-title
+						| CEO / Marketing Guru
+					p.team__item-dscr
+						| Lorem ipsum dolor sit amet, 
+						| consectetuer adipiscing elit, 
+						| sed diam nonummy nibh euismod 
+						| tincidunt ut laoreet
+						| dolore magna.
+					ul.team__social-list
+						li.team__social-item
+							a.team__social-link.link-fb(href="#")
+						li.team__social-item
+							a.team__social-link.link-tw(href="#")
+						li.team__social-item
+							a.team__social-link.link-ln(href="#")
+				.team__item
+					img.team__item-img(src="img/icons/circle.png", alt="")
+					h5.team__item-title
+						| Olivia Wilde
+					span.team__item-sub-title
+						| CEO / Marketing Guru
+					p.team__item-dscr
+						| Lorem ipsum dolor sit amet, 
+						| consectetuer adipiscing elit, 
+						| sed diam nonummy nibh euismod 
+						| tincidunt ut laoreet
+						| dolore magna.
+					ul.team__social-list
+						li.team__social-item
+							a.team__social-link.link-fb(href="#")
+						li.team__social-item
+							a.team__social-link.link-tw(href="#")
+						li.team__social-item
+							a.team__social-link.link-ln(href="#")
+						li.team__social-item
+							a.team__social-link.link-mail(href="#")
+				.team__item
+					img.team__item-img(src="img/icons/circle.png", alt="")
+					h5.team__item-title
+						| Ashley Greene
+					span.team__item-sub-title
+						| CEO / Marketing Guru
+					p.team__item-dscr
+						| Lorem ipsum dolor sit amet, 
+						| consectetuer adipiscing elit, 
+						| sed diam nonummy nibh euismod 
+						| tincidunt ut laoreet
+						| dolore magna.
+					ul.team__social-list
+						li.team__social-item
+							a.team__social-link.link-fb(href="#")
+						li.team__social-item
+							a.team__social-link.link-tw(href="#")
+						li.team__social-item
+							a.team__social-link.link-mail(href="#")
+	section.skills#Skills.text-center
+		.container
+			.skills__title-wrap
+				h2.skills__title
+					| WE GOT SKILLS!
+				p.skills__title-dscr
+					| Lorem ipsum dolor sit amet, 
+					| consectetur adipisicing elit, 
+					| sed do eiusmod <br> tempor incididunt
+					| ut labore et dolore magna aliqua.
+			.skills__diagramms
+				.skills__diagramm_1
+					#circle
+						span.skills__value 100 
+					span.skills__item-title
+						| Web Design
+				.skills__diagramm_2
+					#circle2
+						span.skills__value 100 
+					span.skills__item-title
+						| HTML / CSS
+				.skills__diagramm_3
+					#circle3
+						span.skills__value 100 
+					span.skills__item-title
+						| GRAPHIC DESIGN
+				.skills__diagramm_4
+					#circle4
+						span.skills__value 100 
+					span.skills__item-title
+						| UI / UX
+	section.portfolio#Work.text-center
+		.container
+			.portfolio__title-wrap
+				h2.portfolio__title
+					| OUR PORTFOLIO
+				p.portfolio__title-dscr
+					| Neque porro quisquam est, qui 
+					| dolorem ipsum quia dolor sit amet <br>
+					| consectetur, adipisci velit, 
+					| sed quia non numquam
+			.portfolio__gallery-wrap
+				.portfolio__gallery-menu
+					ul.portfolio__gallery-list
+						li.portfolio__gallery-item
+							a.portfolio__gallery-link.portfolio__gallery-link_active(href="#") all
+						li.portfolio__gallery-item
+							a.portfolio__gallery-link(href="#") web
+						li.portfolio__gallery-item
+							a.portfolio__gallery-link(href="#") apps
+						li.portfolio__gallery-item
+							a.portfolio__gallery-link(href="#") icons
+			.portfolio__gallery-items-wrap
+				.portfolio__item
+					img.portfolio__item-img(src="img/gallery_1.png", alt="")
+					p.portfolio__gallery-item-dscr
+						| Isometric Perspective Mock-Up
+				.portfolio__item
+					img.portfolio__item-img(src="img/gallery_2.png", alt="")
+					p.portfolio__gallery-item-dscr
+						| Isometric Perspective Mock-Up
+				.portfolio__item
+					img.portfolio__item-img(src="img/gallery_3.png", alt="")
+					p.portfolio__gallery-item-dscr
+						| Isometric Perspective Mock-Up
+				.portfolio__item
+					img.portfolio__item-img(src="img/gallery_4.png", alt="")
+					p.portfolio__gallery-item-dscr
+						| Isometric Perspective Mock-Up
+			.portfolio__button-wrap
+				a(href="#").portfolio__button 
+					| LOAD MORE PROJECTS
+	section.about#Blog.text-left
+		.container
+			.about__title-wrap.text-center
+				h2.about__title
+					| WHAT PEOPLE SAY ABOUT US
+				p.about__title-dscr
+					| Our clients love us!
+			.about__items-wrap.clearfix
+				.about__item.left.clearfix
+					img.about__item-img.left(src="img/icons/small-circle.png", alt="")
+					.about__about-item.left
+						p.about__item-dscr
+							| Nullam dapibus blandit orci, 
+							| viverra gravida dui lobortis eget. 
+							| Maecenas fringilla urna eu 
+							| nisl scelerisque.
+						h5.about__item-title
+							| Chanel Iman
+						span.about__item-sub-title
+							| CEO of Pinterest
+				.about__item.right.clearfix
+					img.about__item-img.left(src="img/icons/small-circle.png", alt="")
+					.about__about-item.left
+						p.about__item-dscr
+							| Nullam dapibus blandit orci, 
+							| viverra gravida dui lobortis eget. 
+							| Maecenas fringilla urna eu 
+							| nisl scelerisque.
+						h5.about__item-title
+							| Chanel Iman
+						span.about__item-sub-title
+							| CEO of Pinterest
+				.about__item.left.clearfix
+					img.about__item-img.left(src="img/icons/small-circle.png", alt="")
+					.about__about-item.left
+						p.about__item-dscr
+							| Nullam dapibus blandit orci, 
+							| viverra gravida dui lobortis eget. 
+							| Maecenas fringilla urna eu 
+							| nisl scelerisque.
+						h5.about__item-title
+							| Chanel Iman
+						span.about__item-sub-title
+							| CEO of Pinterest
+				.about__item.right.clearfix
+					img.about__item-img.left(src="img/icons/small-circle.png", alt="")
+					.about__about-item.left
+						p.about__item-dscr
+							| Nullam dapibus blandit orci, 
+							| viverra gravida dui lobortis eget. 
+							| Maecenas fringilla urna eu 
+							| nisl scelerisque.
+						h5.about__item-title
+							| Chanel Iman
+						span.about__item-sub-title
+							| CEO of Pinterest
+	section.touch#Contact.text-center
+		.container
+			.touch__title-wrap
+				h2.touch__title
+					| GET IN TOUCH
+				p.touch__title-dscr
+					| 1600 Pennsylvania Ave NW, 
+					| Washington, DC 20500, United 
+					| States of America. 
+					| Tel: (202) 456-1111
+			.touch__feedback-wrap
+				.touch__feedback
+					form.feedback(action="#").clearfix
+						.feedback__input
+							.feedback__name.left
+								label(for="name")
+									input.input(type="text" placeholder="Your Name")
+							.feedback__email.right
+								label(for="email")
+									input.input(type="text" placeholder="Your Email")
+						.feedback__textarea
+							label(for="textarea")
+								textarea.input(name="#" placeholder="Your Message")
+						.touch__feedback-button-wrap
+							a(href="#").touch__button
+								| SEND MESSAGE
+	footer.footer.text-center
+		.container
+			.footer__social-wrap
+				ul.footer__social-list
+					li.footer__social-item
+						a.footer__social-link(href="#") Facebook
+					li.footer__social-item
+						a.footer__social-link.footer__social-link_active(href="#") Twitter
+					li.footer__social-item
+						a.footer__social-link(href="#") Google+
+					li.footer__social-item
+						a.footer__social-link(href="#") Linkedln
+					li.footer__social-item
+						a.footer__social-link(href="#") Behance
+					li.footer__social-item
+						a.footer__social-link(href="#") Dribbble          
+					li.footer__social-item
+						a.footer__social-link(href="#") GitHub
+
+
+	
+
+	script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+	script(src='js/jquery.waypoints.min.js')
+	script(src='js/animate-css.js')
+	script(src='libs/circle-progress.js')
+	script(src='js/jquery.malihu.PageScroll2id.min.js')
+	script(src='js/main.js')

@@ -1,0 +1,298 @@
+@import _start
+@import _mixins
+html,body
+    height: 100%
+    width: 100%
+.container
+    +container(1140px)
+section
+    padding-top: 100px
+// ============================================
+$purple: #87509c
+$green: #17c2a4
+$grey: #e7f1f8
+$white: #fff
+$orange: #ffdd99
+
+@import _header
+.services
+    color: #fff
+    min-height: 750px
+    background: $green
+.services__title
+    +title(#14a58c)
+.services__title-dscr
+    @extend %title-dscr
+.services__items-wrap
+    width: 100%
+    display: inline-block
+    text-align: justify
+    &:last-child:after
+        content: ""
+        width: 100%
+        display: inline-block
+.services__item
+    display: inline-block
+    position: relative
+    width: 20%
+    text-align: center
+.services__item-img
+    margin-bottom: 40px
+.services__item-title
+    @extend %item-title
+.services__item-dscr
+    font-size: 16px
+    font-family: 'TitilliumWeb-Light'
+
+// ==============================================
+.team
+    min-height: 900px
+    color: #3c4761
+    background: $grey
+.team__title
+    +title(#c8d9e5)
+.team__title-dscr
+    @extend %title-dscr
+.team__social-item
+    display: inline-block
+    margin-right: 10px
+    &:last-child
+        margin-right: 0
+.team__social-link
+    background-image: url(../img/sprite.png)
+    background-repeat: no-repeat
+    display: block
+    width: 32px
+    height: 32px
+.link-fb
+    background-position: -10px -10px
+.link-tw
+    background-position: -166px -10px
+.link-ln
+    background-position: -62px -10px
+.link-mail
+    background-position: -114px -10px
+.team__items-wrap
+    width: 100%
+    display: inline-block
+    text-align: justify
+    &:last-child:after
+        content: ""
+        width: 100%
+        display: inline-block
+.team__item
+    display: inline-block
+    position: relative
+    width: 20%
+    text-align: center
+.team__item-img
+    margin-bottom: 35px
+.team__item-title
+    @extend %item-title
+.team__item-sub-title
+    color: #30bae7
+    font-family: 'TitilliumWeb-Regular'
+    font-size: 16px
+
+// =============================================
+
+.skills
+    min-height: 630px
+    color: #3c4761
+    background: $white
+.skills__title
+    +title(#dfe8ed)
+.skills__title-dscr
+    @extend %title-dscr
+.skills__diagramms
+    width: 100%
+    display: inline-block
+    text-align: justify
+    &:last-child:after
+        content: ""
+        width: 100%
+        display: inline-block
+.skills__diagramm_1,
+.skills__diagramm_2,
+.skills__diagramm_3,
+.skills__diagramm_4
+    width: 20%
+    position: relative
+    display: inline-block
+    text-align: center
+#circle,
+#circle2,
+#circle3,
+#circle4
+    margin-bottom: 25px
+.skills__value
+    position: absolute
+    font-family: "TitilliumWeb-Light"
+    font-size: 50px
+    left: 65px
+    top: 37px
+.skills__item-title
+    @extend %item-title
+
+
+// ==============================================
+
+.portfolio
+    min-height: 1400px
+    background: $orange
+    color: #393939
+.portfolio__title
+    +title(#e5c37f)
+.portfolio__title-dscr
+    @extend %title-dscr
+    margin-bottom: 40px
+.portfolio__gallery-wrap
+    margin-bottom: 60px
+.portfolio__gallery-list
+    font-size: 18px
+.portfolio__gallery-items-wrap
+    margin-bottom: 75px
+.portfolio__gallery-item
+    display: inline-block
+    margin-right: 10px
+    &:last-child
+        margin-right: 0
+.portfolio__gallery-link
+    font-family: 'TitilliumWeb-Regular'
+    text-transform: uppercase
+    padding: 7px 25px
+    border-radius: 3px
+    color: #393939
+    background: #ebc985
+    &:hover
+        background: #fff       
+.portfolio__gallery-link_active
+    background: #fff
+.portfolio__gallery-item-dscr
+    font-family: 'TitilliumWeb-Regular'
+    text-transform: uppercase
+    font-size: 18px
+.portfolio__item
+    display: inline-block
+    margin-right: 20px
+    margin-bottom: 60px
+    &:nth-child(2n)
+        margin-right: 0
+    &:nth-child(3),
+    &:nth-child(4)
+        margin-bottom: 0
+.portfolio__item-img
+    width: 450px
+.portfolio__button-wrap
+    position: relative
+    float: right
+    right: 50%
+.portfolio__button 
+    +button(#17c2a4, #23cfb0, #04af91, #14a58c)
+
+// ===========================================
+
+.about
+    background: #d74680
+    color: #fff
+    min-height: 900px
+.about__title
+    +title(#b73c6d)
+.about__title-dscr
+    @extend %title_dscr
+
+.about__item
+    width: 500px
+    &:nth-child(1),
+    &:nth-child(2)
+        margin-bottom: 120px
+.about__item-img
+    margin-right: 45px
+.about__item-dscr
+    width: 330px
+    font-family: 'TitilliumWeb-Italic'
+    font-size: 21px
+    margin: 6px 0 25px 0
+    &:before, &:after
+        content: '""'
+.about__item-title
+    @extend %item-title
+.about__item-sub-title
+    color: #ffdd99
+    font-family: 'TitilliumWeb-Regular'
+    font-size: 18px
+
+// =========================================
+
+.touch
+    background: #3c5499
+    color: #fff
+    min-height: 800px
+.touch__title
+    +title(#273a71)
+.touch__title-dscr
+    @extend %title-dscr
+.input
+    background: #273a71
+    border: none
+    border-radius: 3px 
+
+.feedback__input
+    margin-bottom: 20px
+    display: inline-block
+
+.feedback__name
+    margin-right: 30px
+    input
+        width: 400px
+    label
+        width: 100%
+    input[placeholder]
+        color: #fff
+        font-size: 18px
+        padding: 17px 0 17px 20px 
+        font-family: 'TitilliumWeb-Regular'  
+
+
+.feedback__email
+    @extend .feedback__name
+    margin-right: 0 
+
+.feedback__textarea
+    margin-bottom: 60px
+    textarea
+        width: 830px
+        height: 200px
+    textarea[placeholder]
+        padding: 17px 0 17px 20px  
+        font-size: 18px 
+        font-family: 'TitilliumWeb-Regular'
+.touch__feedback-button-wrap
+    position: relative
+    float: right
+    right: 50%
+.touch__button
+    +button(#30bae7, #45d1f6, #32a0c4, #299ec5)
+
+// ======================================
+
+.footer
+    min-height: 110px
+    background: #344b8e
+
+.footer__social-item
+    line-height: 110px
+    display: inline-block
+    margin-right: 48px
+    &:last-child
+        margin-right: 0
+
+
+.footer__social-link
+    font-family: 'TitilliumWeb-SemiBold'
+    font-size: 24px
+    color: #fff
+    &:hover
+        color: #30bae7
+.footer__social-link_active
+    color: #30bae7
