@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Document
+        link(rel="stylesheet", href="stylesheets/normalize.css")
+        link(rel="stylesheet", href="stylesheets/screen.css")
+    body
+        .email-container
+            .email-header
+                .email-center
+                    
+                    a.email-logo(href="#")
+                        img(src="img/logo.png", alt="Logo")
+                    
+                    .email-cocial-wrap
+                        a(href="#")
+                            img(src="img/soc_twitter.png", alt="TW")
+                        a(href="#")
+                            img(src="img/soc_vk.png", alt="VK")
+                        a(href="#")
+                            img(src="img/soc_fb.png", alt="fb")
+                    .email-header-top.
+                        Самое лучшее предложение <br> из всех, которые вы получали        
+                    
+                    a(href="#").email-button Подробнее
+                    
+            .email-content
+                .email-center
+                    .email-tizers-wrap
+                        .email-tizer-item
+                            img(src="img/icon_1.png", alt="")
+                            p У нас есть лапки
+                        .email-tizer-item
+                            img(src="img/icon_2.png", alt="")
+                            p ... и бумажные самолетики
+                        .email-tizer-item
+                            img(src="img/icon_3.png", alt="")
+                            p Кроме того, у нас есть чемодан
+                    .email-sale-text Заказывайте сейчас - получайте скидку    
+                    
+                    .mail-products-wrap
+                        -for(var x=1; x < 5; x++)
+                            .mail-products-item
+                                a(href="")
+                                    img(src="img/items/"+ x +".jpg", alt="")
+                                .mail-price 2 000 руб.
+                                a(href="#").product-button Заказать
+        .email-footer.
+            OOO "Лучшее предложение" <a href="#"> Отписаться от рассылки </a>
